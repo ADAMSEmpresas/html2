@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formación en IA ADAMS 2025</title>
+    <style>
+        @font-face {
+            font-family: 'Neo Sans';
+            src: url('https://example.com/fonts/NeoSans-Regular.ttf');
+        }
+@media (max-width: 768px) {
+    nav {
+        display: flex;
+        flex-wrap: wrap; /* Permite que las cajas se ajusten automáticamente */
+        justify-content: center; /* Centra las cajas en dispositivos móviles */
+    }
+
+    nav a {
+        margin: 10px; /* Espaciado más generoso entre las cajas en pantallas pequeñas */
+        padding: 15px 20px; /* Ajustar tamaño en móviles */
+        font-size: 14px; /* Reducir ligeramente el tamaño del texto */
+    }
+}
+
+    body {
+        font-family: 'Neo Sans', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-image: url('https://d1l8l3rp33cdzs.cloudfront.net/images/adams_cee/Mesa%20de%20trabajo%201-100.jpg'); /* Imagen de fondo para el cuerpo */
+        background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+        background-repeat: no-repeat; /* No repetir la imagen */
+        background-position: center center; /* Centrar la imagen */
+        background-attachment: fixed; /* El fondo permanece fijo al hacer scroll */
+        color: #01432B;
+        overflow-x: hidden;
+    }
+
+        header {
+            text-align: center;
+            padding: 20px 10px;
+            background-color: #d1e9da; /* Fondo sólido */
+            color: #FFFFFF; /* Texto blanco */
+        }
+
+        header img {
+            width: 90px;
+            height: auto;
+            margin-bottom: -10px;
+        }
+nav {
+    text-align: center;
+    background-color: #FFFFFF;
+    padding: 10px 0;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 9;
+}
+
+nav a {
+    display: inline-block; /* Cambiar a inline-block para que se comporten como cajas */
+    margin: 5px 10px; /* Espaciado entre las cajas */
+    padding: 10px 15px; /* Tamaño de las cajas */
+    text-decoration: none;
+    color: #01432B;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: 2px solid #01432B; /* Borde del color especificado */
+    border-radius: 15px; /* Bordes redondeados */
+    background-color: transparent; /* Fondo transparente */
+    transition: color 0.3s, background-color 0.3s; /* Animación en hover */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Sombra paralela */
+}
+
+nav a:hover {
+    color: #FFFFFF;
+    background-color: #01432B; /* Cambiar el fondo en hover */
+    text-shadow: none; /* Eliminar sombra en hover */
+}
+
+        section {
+            display: none;
+            margin: 20px auto;
+            max-width: 800px;
+            padding: 20px;
+            background-color: #FFFFFF;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Sombra paralela */
+            border-radius: 8px;
+        }
+        section.active {
+            display: block;
+        }
+        h1, h2 {
+            color: #01432B;
+            text-align: center;
+            padding: 10px;
+            border-radius: 15px;
+            border: 2px solid #01432B;
+            background-color: rgba(255, 255, 255, 0.8);
+            display: inline-block;
+            margin: 20px auto;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Sombra paralela */
+        }
+        .highlight-container {
+            width: 100%;
+            text-align: center;
+            margin-top: 20px auto;
+        }
+        h3.highlight {
+            color: #01432B;
+            text-align: center;
+            margin: 20px auto;
+            padding: 10px 20px;
+            border-radius: 15px;
+            border: 2px solid #FFA821;
+            background-color: rgba(255, 255, 255, 0.8);
+            display: block;
+            width: fit-content;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Sombra paralela */
+        }
+        .cta {
+            display: block;
+            text-align: center;
+            margin: 20px auto;
+            padding: 15px 30px;
+            background-color: #FFA821;
+            color: #FFFFFF;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            max-width: 400px;
+            transition: background-color 0.3s;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Sombra paralela */
+        }
+        .cta:hover {
+            background-color: #01432B;
+        }
+        .methodology {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .methodology div {
+            border: 2px solid #01432B;
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            max-width: 300px;
+            background-color: rgba(255, 255, 255, 0.8);
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Sombra paralela */
+        }
+        ul.module-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul.module-list li {
+            padding: 15px;
+            border: 2px solid #01432B;
+            border-radius: 10px;
+            margin: 10px 0;
+            text-align: left;
+            cursor: pointer;
+            background-color: rgba(255, 255, 255, 0.9);
+            transition: background-color 0.3s, color 0.3s;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Sombra paralela */
+        }
+        ul.module-list li:hover {
+            background-color: #FFA821;
+            color: #FFFFFF;
+        }
+        .module-content {
+            display: none;
+            margin-top: 10px;
+            padding: 15px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border: 1px solid #FFA821;
+            border-radius: 10px;
+            text-align: left;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Sombra paralela */
+        }
+        .profile {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .image-container {
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Sombra paralela */
+        }
+        .image-container img {
+            width: 100%;
+            height: auto;
+        }
+        .green-border {
+            border: 6px solid #01432B;
+        }
+        .orange-border {
+            border: 4px solid #FFA821;
+        }
+        footer {
+            background-color: #01432B;
+            color: #FFFFFF;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+        .resources-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .resource-box {
+            border: 2px solid #01432B;
+            border-radius: 15px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            max-width: 300px;
+            text-align: center;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Sombra paralela */
+        }
+.rounded-box {
+    border: 2px solid #01432B; /* Color del borde */
+    border-radius: 15px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno */
+    background-color: transparent; /* Fondo transparente */
+    text-align: left; /* Alineación del texto */
+    margin: 10px 0; /* Margen externo */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Sombra paralela */
+}
+		.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.contact-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 2px solid #01432B;
+    border-radius: 15px;
+    padding: 10px 20px;
+    background-color: transparent;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Sombra paralela */
+    color: #01432B;
+    font-size: 18px;
+    text-align: center;
+}
+
+.contact-box i {
+    color: #FFA821; /* Color de los íconos */
+    font-size: 20px;
+}
+/* Slogan */
+.contact-slogan {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #01432B;
+    margin-bottom: 20px;
+}
+
+/* Enlaces de contacto */
+.phone-link, .email-link {
+    text-decoration: none;
+    color: #01432B;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.phone-link:hover, .email-link:hover {
+    color: #FFA821; /* Cambia de color al pasar el mouse */
+}
+
+/* Contenedor de contacto */
+.contact-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espacio entre las cajas */
+    margin-top: 20px;
+}
+
+/* Caja de contacto */
+.contact-box {
+    border: 2px solid #01432B;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Sombra paralela */
+    background-color: transparent;
+}
+
+/* CTA Box */
+.cta-box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.cta-text {
+    display: inline-block;
+    color: #FFA821;
+    font-size: 2.4em;
+    font-weight: bold;
+    border: 2px solid #FFA821;
+    border-radius: 15px;
+    padding: 10px 20px;
+    background-color: transparent;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2); /* Sombra paralela */
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://d1l8l3rp33cdzs.cloudfront.net/images/adams_cee/ADAMS.png" alt="Logo ADAMS">
+    </header>
+<nav>
+    <a onclick="showSection('contexto')">Contexto</a>
+    <a onclick="showSection('opcion-a')">IA en la Empresa</a>
+    <a onclick="showSection('opcion-b')">IA en la Estrategia Comercial</a>
+    <a onclick="showSection('perfil-experto')">Perfil del Experto</a>
+    <a onclick="showSection('recursos')">Recursos</a>
+	<a onclick="showSection('presupuesto')">Presupuesto</a>
+    <a onclick="showSection('contacto')">Contacto</a>
+</nav>
+    <section id="contexto" class="active">
+        <h2>Contexto</h2>
+        <p>Potencia la creatividad y productividad de tu equipo con la IA Generativa: una formación práctica para estar a la altura de un mercado en constante cambio.</p>
+        <p>ADAMS ha desarrollado una formación para dar respuestas a estas necesidades desde varios enfoques:</p>
+        <a onclick="showSection('opcion-a')" class="cta">IA en la empresa: Dirigido a Departamentos de RRHH y Marketing.</span>
+</a>
+        <a onclick="showSection('opcion-b')" class="cta">IA en la estrategia comercial: dirigido al Área Comercial.</span>
+</a>
+        <h3 class="highlight">Metodología</h3>
+        <div class="methodology">
+            <div>
+                <strong>Presencial:</strong> 6 horas y acceso durante 6 meses de nuestra herramienta de IA.
+            </div>
+            <div>
+                <strong>Virtual:</strong> 3 sesiones de 2 horas cada una y acceso durante 6 meses de nuestra herramienta de IA.
+            </div>
+        </div>
+    </section>
+
+    <section id="opcion-a">
+    <h2>IA en la Empresa</h2>
+		<h3 class="highlight">Objetivos de la Formación</h3>
+    <p>Esta formación ayuda a los líderes de distintos departamentos a entender cómo la IA generativa puede transformar sus áreas específicas y cómo incorporarla estratégicamente en sus funciones diarias y objetivos de 2025. El taller es sumamente práctico utilizando nuestra herramienta de IA creada específicamente para departamentos de RRHH y Marketing.</p>
+    <h3 class="highlight">Programa Formativo</h3>
+    <ul class="module-list">
+        <li onclick="toggleModule(1)">MÓDULO 1: LA IRRUPCIÓN DE LA IA GENERATIVA EN LA EMPRESA</li>
+        <div id="module-content-1" class="module-content">
+            <p>Introducción a la IA generativa y su relevancia para las empresas.</p>
+            <p>Ejemplos de impacto de la IA en diferentes departamentos.</p>
+        </div>
+        <li onclick="toggleModule(2)">MÓDULO 2: PRINCIPALES DIFERENCIAS ENTRE LOS DISTINTOS CHATBOTS</li>
+        <div id="module-content-2" class="module-content">
+            <p>Comparativa entre ChatGPT, Copilot, Gemini y Claude 3.</p>
+            <p>Casos de uso en departamento clave: Recursos Humanos, Finanzas, Marketing y Operaciones.</p>
+        </div>
+        <li onclick="toggleModule(3)">MÓDULO 3: LA IMPORTANCIA DE SABER PREGUNTAR EN EL USO DE LA IA</li>
+        <div id="module-content-3" class="module-content">
+            <p>Técnicas para formular preguntas efectivas en IA.</p>
+            <p>Cómo el enfoque adecuado impacta el rendimiento en tareas específicas por departamento.</p>
+        </div>
+        <li onclick="toggleModule(4)">MÓDULO 4: UTILIZACIÓN DE LA HERRAMIENTA DE IA PARA MEJORAR LA PRODUCTIVIDAD</li>
+        <div id="module-content-4" class="module-content">
+            <p>Presentaciones: Generación automatizada de presentaciones corporativas.</p>
+            <p>Análisis de documentos y licitaciones: Procesamiento y análisis automatizado de grandes volúmenes de información en documentos y licitaciones, facilitando la toma de decisiones.</p>
+            <p>Creación de videos: Simplificación de la producción audiovisual, útil para marketing, formación y comunicaciones internas.</p>
+        </div>
+        <li onclick="toggleModule(5)">MÓDULO 5: CHAT GPT A NIVEL CORPORATIVO ¿SÍ O NO?</li>
+        <div id="module-content-5" class="module-content">
+            <p>Ventajas y limitaciones del ChatGPT para cada departamento.</p>
+            <p>Casos de éxito y alternativas en el mercado.</p>
+        </div>
+        <li onclick="toggleModule(6)">MÓDULO 6: TENDENCIAS DE LA IA PARA 2025</li>
+        <div id="module-content-6" class="module-content">
+            <p>IA y automatización: Avances esperados en la automatización de procesos.</p>
+            <p>Nuevas herramientas de IA y su impacto en las operaciones diarias.</p>
+        </div>
+    </ul>
+</section>
+
+    <section id="opcion-b">
+        <h2>IA en la Estrategia Comercial</h2>
+        <h3 class="highlight">Objetivos de la Formación</h3>
+        <p>Esta formación ayuda al departamento de ventas a entender la relevancia de la IA generativa y cómo incorporarla de manera efectiva en su estrategia para 2025. El taller es sumamente práctico utilizando nuestra herramienta de IA creada específicamente para departamentos comerciales.</p>
+        <h3 class="highlight">Programa Formativo</h3>
+        <ul class="module-list">
+            <li onclick="toggleModule(7)">MÓDULO 1: LA IRRUPCIÓN DE LA IA GENERATIVA EN LA EMPRESA</li>
+            <div id="module-content-7" class="module-content">
+                <p>Introducción a la IA generativa y su relevancia para las empresas.</p>
+                <p>Ejemplos de impacto de la IA en diferentes departamentos.</p>
+            </div>
+            <li onclick="toggleModule(8)">MÓDULO 2: PRINCIPALES DIFERENCIAS ENTRE LOS DISTINTOS CHATBOTS</li>
+            <div id="module-content-8" class="module-content">
+                <p>Comparativa entre ChatGPT, Copilot, Gemini y Claude 3.</p>
+                <p>Casos de uso en departamento clave: Recursos Humanos, Finanzas, Marketing y Operaciones.</p>
+            </div>
+            <li onclick="toggleModule(9)">MÓDULO 3: LA IMPORTANCIA DE SABER PREGUNTAR EN EL USO DE LA IA</li>
+            <div id="module-content-9" class="module-content">
+                <p>Técnicas para formular preguntas efectivas en IA.</p>
+                <p>Cómo el enfoque adecuado impacta el rendimiento en tareas específicas por departamento.</p>
+            </div>
+            <li onclick="toggleModule(10)">MÓDULO 4: CÓMO SACAR EL MÁXIMO PROVECHO DE CHATGPT, COPILOT, GEMINI Y CLAUDE 3</li>
+            <div id="module-content-10" class="module-content">
+                <p>Optimizar el uso de herramientas de IA para mejorar la productividad.</p>
+                <p>Funcionalidades clave de cada herramienta.</p>
+                <p>Integración de estas plataformas en el flujo de trabajo corporativo.</p>
+            </div>
+            <li onclick="toggleModule(11)">MÓDULO 5: LA LLEGADA DE LA IA A LOS DEPARTAMENTOS COMERCIALES</li>
+            <div id="module-content-11" class="module-content">
+                <p>Descubrir cómo la IA está transformando las ventas y el acercamiento a clientes.</p>
+                <p>Prospección: Utilización de la IA para identificar y calificar prospectos.</p>
+                <p>Escucha Activa: Aplicación de la IA para entender mejor las necesidades del cliente.</p>
+            </div>
+            <li onclick="toggleModule(12)">MÓDULO 6: CHAT GPT A NIVEL CORPORATIVO: ¿SÍ O NO?</li>
+            <div id="module-content-12" class="module-content">
+                <p>Ventajas y limitaciones de ChatGPT para uso corporativo.</p>
+                <p>Comparación con otras alternativas de IA.</p>
+            </div>
+            <li onclick="toggleModule(13)">MÓDULO 7: UTILIZACIÓN DE NUESTRA HERRAMIENTA PARA MEJORAR LA PRODUCTIVIDAD</li>
+            <div id="module-content-13" class="module-content">
+                <p>Presentaciones comerciales: Generación rápida y efectiva de presentaciones.</p>
+                <p>Presupuestos: Optimización y automatización de la creación de presupuestos.</p>
+                <p>Transcripciones: Transcribir reuniones y conferencias de manera automática.</p>
+            </div>
+            <li onclick="toggleModule(14)">MÓDULO 8: TENDENCIAS IA EN 2025</li>
+            <div id="module-content-14" class="module-content">
+                <p>Identificar las tendencias emergentes de la IA y su impacto en el futuro.</p>
+                <p>Estrategias para mantenerse a la vanguardia en 2025.</p>
+            </div>
+        </ul>
+    </section>
+	<section id="recursos">
+    <h2>Recursos</h2>
+    <div class="resources-container">
+        <div class="resource-box">
+            <p>Durante las jornadas se accederá a la herramienta de IA para rentabilizar al máximo la sesión.</p>
+        </div>
+        <div class="resource-box">
+            <p>Los participantes de la jornada accederán durante 6 meses a la herramienta de IA.</p>
+        </div>
+    </div>
+</section>
+
+<section id="perfil-experto">
+    <h2>Perfil del Experto</h2>
+    <div class="profile">
+        <!-- Primer marco -->
+        <div class="image-container green-border" style="width: 240px; height: 240px;">
+            <img src="https://d1l8l3rp33cdzs.cloudfront.net/images/adams_cee/44.jpg" alt="Experto 1">
+        </div>
+        <!-- Segundo marco -->
+        <div class="image-container orange-border" style="width: 150px; height: 150px;">
+            <img src="https://d1l8l3rp33cdzs.cloudfront.net/images/adams_cee/Imagen4.jpg" alt="Experto 2">
+        </div>
+    </div>
+    <p>Formador Redes Sociales en IESE, ESADE, IE, ISDI, Universidad de Navarra, Universidade de A Coruña y Universidad de Deusto.</p>
+	<p><b><i>Proyectos formativos para empresas como:</b></i> Boehringer Ingelheim, Sanitas, Gas Natural, Banco Mediolanum, Sanofi, EY, Eurofirms, KPMG, Farmacias Ecoceutics, Affinity Petcare, Carrefour, Cajamar, Grupo DIA, Banco Sabadell, Asics, SAP, Sanofi, Ilunion, Banca March, Wolters Kluwer, Sonae Portugal , Ferrovial, Inditex, Sanitas o Laboratorios Ferrer. 
+</p>
+    <p>Es uno de los mayores y más reputados expertos en redes profesionales. En sus sesiones no sólo es capaz de transmitir con el máximo entusiasmo los mejores trucos para sacarle el máximo partido a los canales digitales, también explica las buenas prácticas y los posibles escollos a encontrar desde la experiencia vivida como dinamizador digital de nuestra propia empresa.</p>
+<p><b><span style="color: #FFA821; font-size: 1em;"><p style="text-align: center;"><span style="color: #FFA821; font-size: 1.4em;">Top 10 Mundial Influencers Digital Selling y Primero en habla hispana.</p> <p><p style="text-align: center;">Autor del libro: <i>"Cliente digital, vendedor digital"</i>.</b></p></span>
+</section>
+
+    <section id="presupuesto">
+        <h2>Presupuesto</h2>
+		 <div class="rounded-box">
+        <p><strong><p style="text-align: left;"><span style="color: #FFA821; font-size: 1.4em;">Incorporación de la IA en la empresa 2025</strong></span></p>
+        <p><strong>Modalidad:</strong> Taller presencial 6 horas o 3 sesiones de 2 horas por videoconferencia y acceso durante 6 meses a la herramienta de la IA.</p>
+        <p><strong>Presupuesto:</strong> 2.500 € /Grupo.</p>
+    </section>
+
+<section id="contacto">
+    <h2>Contacto</h2>
+    <p class="contact-slogan">Con ADAMS descubrirás la formación del futuro.</p>
+    <!-- CTA -->
+    <div class="cta-box">
+        <span class="cta-text">¿Hablamos?</span>
+    </div>
+    <!-- Contenedor de contacto -->
+    <div class="contact-row">
+        <!-- Teléfono -->
+        <div class="contact-box">
+            <i class="fa fa-phone"></i>
+            <a href="tel:XXXX-XXXX" class="phone-link">617 647 494</a>
+        </div>
+        <!-- Correo -->
+        <div class="contact-box">
+            <i class="fa fa-envelope"></i>
+            <a href="mailto:formacionempresas@adams.es" class="email-link">formacionempresas@adams.es</a>
+        </div>
+    </div>
+</section>
+
+</section>
+
+    <footer>
+        <p>© 2025 ADAMS | Teléfono de contacto: 617 647 494 | <a href="mailto:formacionempresas@adams.es" style="color: #FFA821;">formacionempresas@adams.es</a></p>
+    </footer>
+
+    <script>
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+        }
+
+        function toggleModule(moduleId) {
+            const content = document.getElementById(`module-content-${moduleId}`);
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+        }
+				    function toggleModule(moduleId) {
+        // Cerrar todos los módulos abiertos
+        const allModules = document.querySelectorAll('.module-content');
+        allModules.forEach(module => {
+            module.style.display = 'none'; // Oculta todos los módulos
+        });
+
+        // Abrir solo el módulo seleccionado
+        const content = document.getElementById(`module-content-${moduleId}`);
+        if (content) {
+            content.style.display = 'block'; // Muestra el módulo seleccionado
+        }
+    }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
